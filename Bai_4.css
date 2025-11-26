@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f4f7;
+}
+
+#card-container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #cce0e8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card + .card {
+  margin-top: 15px;
+}
+
+.card h3 {
+  color: #004d66;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #333;
+  font-size: 1em;
+}
+
+.card:hover {
+  background-color: #b3c9d4;
+  transform: translateY(-2px);
+}
