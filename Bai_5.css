@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f4f7;
+}
+
+#card-container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.products {
+  list-style: none;
+}
+
+.products li {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.products li + .products li {
+  margin-top: 15px;
+}
+
+.products li[data-sales="true"] {
+  background-color: #ffe082;
+  color: #333;
+}
+
+.products li:hover {
+  background-color: #e0f2f7;
+  transform: translateY(-2px);
+}
+
+.products li[data-sales="true"]:hover {
+  background-color: #ffd54f;
+}
